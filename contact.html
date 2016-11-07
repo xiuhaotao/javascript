@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="WebStorm®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/helpTip.css"/>
+    <script src="js/baguettebox.js"></script>
+    <script src="js/screenInfo.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div id="home"><a href="home.html"><img src="image/brand.png"></a></div>
+    <div id="screen"></div>
+    <div class="hnav">
+        <nav>
+            <a href="club.html">Our Club</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="membership.html">Membership</a>
+            <a class="selected" href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="section">
+        <article>
+            <h1>Contact Us</h1>
+            <p>Here are the various ways you can contact us:</p>
+            <ul>
+                <li>Telephone:(613) 542-2467</li>
+                <li>Address:45 Napier Street, Kingston, Ontario</li>
+                <li>Postal address:P.O. Box 621, Kingston, Ontario, K7L 4X1</li>
+                <li>General E-mail:<a href="mailto:ktc@kingstontennisclub.com" target="_self">Email us</a></li>
+                <li>Webmaster:<a href="mailto:postmaster@kingstontennisclub.com" target="_self">Email us</a></li>
+            </ul>
+        </article>
+        <div id="gmap">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+            <div style='overflow:hidden;height:500px;width:750px;'>
+                <div id='gmap_canvas' style='height:500px;width:750px;'></div>
+                <div>
+                    <small><a href="http://embedgooglemaps.com"> embedgooglemaps.com </a></small>
+                </div>
+                <div>
+                    <small><a href="http://celebwiki.org/">celebwiki.org</a></small>
+                </div>
+                <style>#gmap_canvas img {
+                    max-width: none !important;
+                    background: none !important
+                }</style>
+            </div>
+            <script type='text/javascript'>function init_map() {
+                var myOptions = {
+                    zoom: 10,
+                    center: new google.maps.LatLng(44.2289963, -76.50610940000001),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(44.2289963, -76.50610940000001)
+                });
+                infowindow = new google.maps.InfoWindow({content: '<strong>Kingston Tennis Club</strong><br>45 Napier Street, Kingston, ON K7L 4X1<br>'});
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+    </div>
+
+    <div class="hnav">
+        <nav>
+            <a href="club.html">Our Club</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="membership.html">Membership</a>
+            <a class="selected" href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="footer">
+        <span class="footer">The Kingston Tennis Club</span><br/>
+        <span class="footer">45 Napier Street, P.O. Box 621</span><br/>
+        <span class="footer">Kingston, ON K7L 4X1</span><br/>
+        <span class="footer">Phone: 613-542-2467</span><br/>
+        <span class="footer">ktc@kingstontenniesclub.com</span><br/>
+        <p/>
+        <span class="footer">© 2016 Kingston Tennis Club. All rights reserved.</span><br/>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="WebStorm®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/helpTip.css"/>
+    <link rel="stylesheet" type="text/css" href="css/membership.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/baguettebox.js"></script>
+    <script src="js/screenInfo.js"></script>
+    <script src="js/membership.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+    <div id="home"><a href="home.html"><img src="image/brand.png"></a></div>
+    <div id="screen"></div>
+    <div class="hnav">
+        <nav>
+            <a href="club.html">Our Club</a>
+            <a href="lessons.html">Lessons</a>
+            <a class="selected" href="membership.html">Membership</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="section">
+        <article>
+            <h1>Membership</h1>
+            <p>A seasonal membership provides access to our seven outdoor courts and the use of our online booking
+                service; there are no initiation fees or court fees for members. We offer a variety of programming to
+                enable new members to meet players of a similar playing level: Challenge Ladders, Drop In Doubles
+                sessions, Tennis Socials, Group Lessons, and Club Tournaments. Our friendly staff will be happy to
+                suggest playing partners, or simply add your name to a "Looking for a Hit" list. Players at every level
+                are welcome.</p>
+            <p>Members receive reduced rates for lessons and junior programs.</p>
+            <p>The club officially opens on the last Saturday in April, but nets are often up earlier, weather
+                permitting. The club's office closes on the Thanksgiving weekend but nets remain up until the snow
+                arrives.</p>
+            <h2>Membership Types</h2>
+            <h2>Adult</h2>
+            Over 18 years of age at the time of membership purchase<br/>
+
+            <h2>Couple</h2>
+            Two adults in a relationship, both persons residing at the same municipal address,
+            or
+            One adult and one child of said adult, either under 18 years of age or a full-time student. Both
+            persons must reside at the same municipal address.<br/>
+
+            <h2>Family</h2>
+            Parent(s) and their children, who are either under 18 years of age or full-time students, all residing
+            at the same municipal address.<br/>
+
+            <h2>Student</h2>
+            Over 18 Years of Age and enrolled in school full-time at the time of membership purchase. Proof
+            of student status may be requested.<br/>
+
+            <h2>Junior</h2>
+            Under 18 Years of Age at the time of membership purchase.<br/>
+        </article>
+
+        <div class="form">
+            <form method="post" action="">
+                <div class="item">
+                    <div class="label">First Name:</div>
+                    <div class="input"><input id="fname" type="text" name="FirstName" required></div>
+                </div>
+                <div class="item">
+                    <div class="label">Last Name:</div>
+                    <div class="input"><input id="lname" type="text" name="LastName" required></div>
+                </div>
+                <div class="error" id="nameError"></div>
+
+                <div class="item">
+                    <div class="label">Password:</div>
+                    <div class="input"><input id="password" type="password" name="password" required></div>
+                </div>
+                <div class="item">
+                    <div class="label">Re-Type Password:</div>
+                    <div class="input"><input id="rePassword" type="password" name="rePassword" required></div>
+                </div>
+                <div class="error" id="passworderror"></div>
+
+                <div class="item">
+                    <div class="label">Birthday:</div>
+                    <div class="input"><input type="date" name="birthday" id="datepicker" required></div>
+                </div>
+                <div class="error" id="birthdayError"></div>
+
+                <div class="item">
+                    <div class="label">Email:</div>
+                    <div class="input"><input id="email" type="email" name="" placeholder="jdoe37@hotmail.com" required></div>
+                </div>
+                <div class="error" id="emailerror"></div>
+
+                <div class="item">
+                    <div class="label">Training Plan:</div>
+                    <div class="input">
+                        <input id="1" class="checkBox" type="checkbox" name="plan" value="100"> <label for="1">Plan A $100</label><br>
+                        <input id="2" class="checkBox" type="checkbox" name="plan" value="200"> <label>Plan B $200</label><br>
+                        <input class="checkBox" type="checkbox" name="plan" value="300"> Plan C $300<br>
+                        <input class="checkBox" type="checkbox" name="plan" value="400"> Plan D $400<br>
+                        <input class="checkBox" type="checkbox" name="plan" value="500"> Plan E $500<br>
+                        <input class="checkBox" type="checkbox" name="plan" value="600"> Plan F $600<br>
+                    </div>
+                </div>
+                <div class="error" id="typeError"></div>
+
+                <div class="item">
+                    <div class="label">Additional Comments:</div>
+                    <div class="input"><textarea name="comment" rows="8" cols="8"></textarea></div>
+                </div>
+                <div class="error" id="commentsError"></div>
+
+                <div class="item">
+                    <div><input class="button" type="reset"></div>
+                    <div><input class="button" id="submit" type="submit" value="Submit"></div>
+                </div>
+            </form>
+            <div id="profile">
+                <h3>Profile</h3>
+                <div id="usernameSection">
+                    <h4>Username</h4>
+                    <p id="profileUsername"></p>
+                </div>
+                <div id="emailSection">
+                    <h4>Email address</h4>
+                    <p id="profileEmail"></p>
+                </div>
+                <div id="ageSection">
+                    <h4>Age</h4>
+                    <p id="profileAge"></p>
+                </div>
+                <div id="planSection">
+                    <h4>Preferred plans</h4>
+                    <ul id="profileplan"></ul>
+                </div>
+                <div id="sectionTotalFee">
+                    <h4>Total Fee</h4>
+                    <P id="totalFee"></P>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hnav">
+        <nav>
+            <a href="club.html">Our Club</a>
+            <a href="lessons.html">Lessons</a>
+            <a class="selected" href="membership.html">Membership</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="footer">
+        <span class="footer">The Kingston Tennis Club</span><br/>
+        <span class="footer">45 Napier Street, P.O. Box 621</span><br/>
+        <span class="footer">Kingston, ON K7L 4X1</span><br/>
+        <span class="footer">Phone: 613-542-2467</span><br/>
+        <span class="footer">ktc@kingstontenniesclub.com</span><br/>
+        <p/>
+        <span class="footer">© 2016 Kingston Tennis Club. All rights reserved.</span><br/>
+    </div>
+</div>
+
+</body>
+</html>

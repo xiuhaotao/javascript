@@ -1,0 +1,265 @@
+body {
+    background-color: #bbbbbb;
+    margin: 0;
+    padding: 0px;
+    font-family: "RobotoRegular", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #eeeeee;
+    width: 1000px;
+    padding: 0px 0px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:link, nav a:visited {
+    margin: 0 0 0 0;
+    padding: 10px 20px 13px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover, nav a:active {
+    margin: 0 0 0 0;
+    padding: 10px 20px 12px 20px;
+    text-decoration: none;
+    background-color: #c6a648;
+    color: #000;
+}
+
+@keyframes myfirst
+{
+    0%   {border-bottom-color: red;}
+    25%  {border-bottom-color: yellow;}
+    50%  {border-bottom-color: blue;}
+    75%  {border-bottom-color: green;}
+    100% {border-bottom-color: red;}
+}
+
+nav a.sidebar:link, nav a.sidebar:visited {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.selected {
+    animation: myfirst 5s;
+
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #c6a648;
+}
+
+nav a.vselected {
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-left-color: #c6a648;
+}
+
+article {
+    padding: 5px 5px 5px 5px;
+    margin: auto;
+    width: 750px;
+}
+
+article h1 {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: #444444;
+    font-size: 16px;
+}
+
+article h2 {
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    color: #444444;
+    font-size: 14px;
+}
+
+span.ftitle {
+    font-size: 14px;
+    font-style: bold;
+    color: #399299;
+}
+
+span.ftitle1 {
+    font-size: 16px;
+    font-style: bold;
+    color: #399299;
+}
+
+span.footer {
+    font-size: 12px;
+    font-style: normal;
+    color: #eeeeee;
+    line-height: 0%
+}
+
+div.snav {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+div.snav nav {
+    margin: 20px 0px 0px 0px;
+}
+
+#header {
+    background-image: url(../image/1.jpg);
+    color: white;
+    height: 500px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    animation-name: titleImage;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titleImage {
+    0% {background-image: url(../image/1.jpg);}
+    33% {background-image: url(../image/2.jpg);}
+    66% {background-image: url(../image/3.jpg);}
+    100% {background-image: url(../image/4.jpg);}
+}
+
+
+#header1 {
+    background-image: url(image/header_about.png), url(image/photo6.jpg);
+    color: white;
+    height: 350px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+#section {
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-left-color: #444;
+}
+
+#coaches {
+    padding-top: 30px;
+    padding-bottom: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    border: 0px solid #73AD21;
+}
+
+.coach {
+    background-color: darkcyan;
+    color: white;
+    float: left;
+    width: 150px;
+    height: 180px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#gmap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    border: 0px solid #73AD21;
+}
+
+div.hnav {
+    background-color: #399299;
+    color: white;
+    height: 20px;
+    text-align: center;
+    clear: both;
+    border-bottom-style: solid;
+    border-bottom-width: 20px;
+    border-bottom-color: #444;
+    padding: 10px;
+}
+
+#footer {
+    padding: 5px 5px 5px 25px;
+    background-color: #444444;
+    height: 200px;
+    color: white;
+    clear: both;
+    text-align: left;
+}
+
+article.list {
+    margin: 25px auto 5px auto;
+    padding: 5px 0px 15px 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+    height: 180px;
+    width: 650px;
+}
+
+div.text span {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #444;
+    color: #399299;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+div.text {
+    padding: 5px 5px 5px 5px;
+    width: 300px;
+    float: left;
+    line-height: 150%
+}
+
+div.thumbnail {
+    width: 300px;
+    float: left;
+}
+
+article button {
+    width: 100px;
+    float: right;
+}
+
+article.detail {
+    line-height: 150%;
+    margin: 25px auto 5px auto;
+    width: 650px;
+}
+
+article.detail img {
+    margin: 15px auto 5px auto;
+    width: 452px;
+}
+
+.gallery img {
+    height: 100%;
+}
+
+.gallery a {
+    width: 180px;
+    height: 135px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 4px 6px;
+    box-shadow: 0 0 4px -1px #000;
+}
+
+.baguetteBoxOne {
+    width:800px;
+    margin:0 auto;
+}

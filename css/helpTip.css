@@ -1,0 +1,28 @@
+#home {
+    position: absolute;
+    left: 20%;
+}
+
+#screen{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    display:none;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    transform-origin: 100% 0%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100; }
+}
+

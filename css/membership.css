@@ -1,0 +1,70 @@
+div.form {
+    width: 750px;
+    height: 500px;
+    padding: 30px 30px 30px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: #eeeeee;
+}
+
+div form {
+    float: left;
+}
+
+div #profile {
+    display: block;
+    float: right;
+    padding: 5px;
+    width: 280px;
+    border: 2px solid #73AD21;
+}
+
+div.item {
+    width: 400px;
+}
+div.error {
+    width: 400px;
+    text-align: right;
+    color: red;
+}
+
+div.label {
+    float: left;
+    width: 180px;
+    text-align: right;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.input {
+    float: left;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input.button {
+    float: right;
+    width: 80px;
+    margin: 5px;
+}
+
+div select {
+    width: 200px;
+}
+
+div input {
+    width: 200px;
+}
+
+div input.checkBox {
+    width: 20px;
+}
+
+div textarea {
+    width: 200px;
+    height: 120px;
+    vertical-align: top;
+}
